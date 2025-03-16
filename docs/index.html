@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
+<!-- ADDED COLLAPSED BUTTONS TO THE INDEX PAGE AS BOOTSTRAP EXTRAPOINT -->
+
 <body>
   <!-- Content starts here -->
   <nav class="navbar navbar-expand-lg bg-secondary-subtle" data-bs-theme="dark">
@@ -27,53 +29,63 @@
             <a class="nav-link" href="article.html">Article</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="photo.html">Photos</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container-fluid">
-    <header class="my-4 p-5 rounded text-center">
+    <header class="p-5 text-center">
       <h1 class="display-4 text-light">Ship's Log</h1>
       <p class="lead text-light">A diary by Capt. Gordon 'Killer' Antone
       </p>
     </header>
   </div>
-  <div class="container">
+  <div class="container-fluid">
+    <h1 class="display-4 mt-4"> Thar Be Monsters in the Sea</h1>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">READ ABOUT BLACK BEARD'S KRAKEN</a>
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">FIND OUT ABOUT LUFFY'S SQUID</button>
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">CLICK FOR SANTIAGO'S TALE</button>    
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      
       <div class="col">
-        <img src="img/kraken01.jpg" class="card-img-top" alt="Kraken attacking a ship.">
-        <div class="card text-bg-light mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <img src="img/kraken01.jpg" class="card-img-top" alt="Kraken attacking a ship.">
+          <div class="card text-bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Black Beard's Bad Break</h5>
+              <p class="card-text">Sed sodales faucibus lorem sit amet cursus. Suspendisse facilisis accumsan tellus sit amet ultricies. Quisque non mi quis ex ullamcorper vulputate ac nec justo.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <img src="img/kraken02.jpg" class="card-img-top" alt="Kraken attacking a ship, lifting it into the air.">
+          <div class="card text-bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Luffy's Luck</h5>
+              <p class="card-text">Sed sodales faucibus lorem sit amet cursus. Suspendisse facilisis accumsan tellus sit amet ultricies. Quisque non mi quis ex ullamcorper vulputate ac nec justo. Phasellus a volutpat dui.</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <img src="img/kraken02.jpg" class="card-img-top" alt="Kraken attacking a ship, lifting it into the air.">
-        <div class="card text-bg-light mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <img src="img/kraken03.jpg" class="card-img-top" alt="Kraken attacking a man in a row boat.">
+          <div class="card text-bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Old man and the Oar</h5>
+              <p class="card-text">Sed sodales faucibus lorem sit amet cursus. Suspendisse facilisis accumsan tellus sit amet ultricies. Quisque non mi quis ex ullamcorper vulputate ac nec justo. Phasellus a volutpat dui. Donec imperdiet eu felis et fringilla. Cras vel velit eleifend quam commodo tempus.</p>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <img src="img/kraken03.jpg" class="card-img-top" alt="Kraken attacking a man in a row boat.">
-        <div class="card text-bg-light mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container-fluid">
-    <footer class="text-center bg-success m-2 p-4">
+    <footer class="text-center m-2 py-2">
       <p>Site by Nicolas Pinto</p>
     </footer>
   </div>
